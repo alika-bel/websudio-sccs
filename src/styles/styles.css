@@ -1,0 +1,189 @@
+:root {
+  /* Кольори */
+  --logo-color: #000000;
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --primary-color: #2f303a;
+  --background-color: #ffffff;
+  --secondary-color: #f5f4fa;
+  --accent-color: #2196f3;
+  --second-bg-color: #f5f4fa;
+  --trunslusent-white: rgba(255, 255, 255, 0.6);
+  /* Шрифти */
+  --font-primary: "Roboto", serif;
+  --font-secondary: "Raleway", serif;
+}
+body {
+  font-family: var(--font-primary);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--primary-text-color);
+}
+
+.logo {
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+  text-decoration: none;
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  font-size: 26px;
+}
+.logo-part {
+  color: var(--logo-color);
+}
+.nav-link {
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.nav-accentlink {
+  letter-spacing: 0.02em;
+  line-height: 1.14;
+  font-weight: 500;
+  color: var(--accent-color);
+  cursor: pointer;
+  text-decoration: none;
+}
+.list-accentlink {
+  letter-spacing: 0.02em;
+  line-height: 1.14;
+  font-weight: 500;
+  color: var(--accent-color);
+  cursor: pointer;
+  text-decoration: none;
+}
+.list-link {
+  letter-spacing: 0.02em;
+  line-height: 1.14;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+}
+.hero {
+  background-color: var(--primary-color);
+}
+.hero-title {
+  color: var(--background-color);
+  font-size: 44px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.36;
+}
+.hero-button {
+  width: 216px;
+  height: 50px;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: var(--accent-color);
+  color: var(--background-color);
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  border-style: none;
+  cursor: pointer;
+}
+.about-subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  line-height: 1.14;
+}
+.about-text {
+  color: var(--secondary-text-color);
+  letter-spacing: 0.03em;
+}
+.work-title {
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.team {
+  background-color: var(--second-bg-color);
+}
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.teammate-name {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+}
+.teammate-text {
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+footer {
+  background-color: var(--primary-color);
+}
+.footer-logo {
+  text-decoration: none;
+  line-height: 1.19;
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+}
+.footer-logopart {
+  color: var(--background-color);
+}
+.address-text {
+  color: var(--background-color);
+  letter-spacing: 0.03em;
+  font-style: normal;
+}
+.adress-link {
+  color: var(--trunslusent-white);
+  text-decoration: none;
+}
+.portfolio-accentbutton {
+  border-radius: 4px;
+  width: 73px;
+  height: 38px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 1px 0 rgba(0, 0, 0, 0.1);
+  background-color: var(--accent-color);
+  border-style: none;
+  cursor: pointer;
+}
+.portfolio-button {
+  border-radius: 4px;
+  background-color: var(--second-bg-color);
+  height: 38px;
+  border-style: none;
+}
+.portfolio-button:hover {
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+.project {
+  border: 1px solid #eee;
+  width: 370px;
+  height: 404px;
+}
+.project-title{
+  font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+
+}
+.project-text{
+font-size: 16px;
+line-height: 1.87;
+letter-spacing: 0.03em;
+color: var(--secondary-text-color);
+}
