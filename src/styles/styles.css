@@ -34,35 +34,31 @@ body {
   color: var(--logo-color);
 }
 .nav-link {
+  color: var(--primary-text-color);
   letter-spacing: 0.02em;
+  line-height: 1.14;
   font-weight: 500;
   cursor: pointer;
   text-decoration: none;
+}
+.nav-link:hover {
+  color: var(--accent-color);
+  cursor: pointer;
 }
 
-.nav-accentlink {
-  letter-spacing: 0.02em;
-  line-height: 1.14;
-  font-weight: 500;
-  color: var(--accent-color);
-  cursor: pointer;
-  text-decoration: none;
-}
-.list-accentlink {
-  letter-spacing: 0.02em;
-  line-height: 1.14;
-  font-weight: 500;
-  color: var(--accent-color);
-  cursor: pointer;
-  text-decoration: none;
-}
 .list-link {
   letter-spacing: 0.02em;
   line-height: 1.14;
   font-weight: 500;
+  color: var(--secondary-text-color);
   cursor: pointer;
   text-decoration: none;
 }
+.list-link:hover {
+  color: var(--accent-color);
+  cursor: pointer;
+}
+
 .hero {
   background-color: var(--primary-color);
 }
@@ -149,10 +145,8 @@ footer {
   color: var(--trunslusent-white);
   text-decoration: none;
 }
-.portfolio-accentbutton {
+.portfolio-button:hover {
   border-radius: 4px;
-  width: 73px;
-  height: 38px;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
     0 3px 1px 0 rgba(0, 0, 0, 0.1);
   background-color: var(--accent-color);
@@ -165,25 +159,21 @@ footer {
   height: 38px;
   border-style: none;
 }
-.portfolio-button:hover {
-  background-color: var(--accent-color);
-  cursor: pointer;
-}
+
 .project {
   border: 1px solid #eee;
   width: 370px;
   height: 404px;
 }
-.project-title{
+.project-title {
   font-weight: 700;
-font-size: 18px;
-line-height: 2;
-letter-spacing: 0.06em;
-
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
-.project-text{
-font-size: 16px;
-line-height: 1.87;
-letter-spacing: 0.03em;
-color: var(--secondary-text-color);
+.project-text {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
 }
