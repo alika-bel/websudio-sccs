@@ -22,7 +22,6 @@ body {
 }
 
 .logo {
-  text-decoration: none;
   letter-spacing: 0.03em;
   color: var(--accent-color);
   text-decoration: none;
@@ -39,7 +38,6 @@ body {
   line-height: 1.14;
   font-weight: 500;
   cursor: pointer;
-  text-decoration: none;
 }
 .nav-link:hover {
   color: var(--accent-color);
@@ -52,7 +50,6 @@ body {
   font-weight: 500;
   color: var(--secondary-text-color);
   cursor: pointer;
-  text-decoration: none;
 }
 .contacts-list-link:hover {
   color: var(--accent-color);
@@ -124,7 +121,6 @@ footer {
   background-color: var(--primary-color);
 }
 .footer-logo {
-  text-decoration: none;
   line-height: 1.19;
   color: var(--accent-color);
   font-weight: 700;
@@ -142,7 +138,7 @@ footer {
 }
 .adress-link {
   color: var(--trunslusent-white);
-  text-decoration: none;
+
   font-style: italic;
 }
 .portfolio-button:hover {
