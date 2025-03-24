@@ -252,11 +252,12 @@ footer {
   height: 38px;
   border-style: none;
 }
-
+img{
+  display: block;
+  width: 100%;
+}
 .project {
   border: 1px solid #eee;
-  width: 370px;
-  height: 404px;
 }
 .project-info {
   margin-left: 24px;
