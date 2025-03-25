@@ -34,7 +34,7 @@ body {
 }
 .header-container {
   display: flex;
-  justify-content: space-between;
+  gap: 93px;
   align-items: center;
 }
 .logo {
@@ -48,10 +48,14 @@ body {
 .logo-part {
   color: var(--logo-color);
 }
+.nav{
+  flex-grow: 1;
+}
 .nav-list {
   display: flex;
   align-items: center;
   gap: 50px;
+  
 }
 .contacts-list {
   display: flex;
@@ -252,7 +256,7 @@ footer {
   height: 38px;
   border-style: none;
 }
-img{
+img {
   display: block;
   width: 100%;
 }
