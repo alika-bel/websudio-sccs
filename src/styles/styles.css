@@ -48,14 +48,13 @@ body {
 .logo-part {
   color: var(--logo-color);
 }
-.nav{
+.nav {
   flex-grow: 1;
 }
 .nav-list {
   display: flex;
   align-items: center;
   gap: 50px;
-  
 }
 .contacts-list {
   display: flex;
@@ -130,6 +129,27 @@ body {
   justify-content: baseline;
   display: flex;
   gap: 30px;
+}
+.about-item::before {
+  content: "";
+  display: block;
+  height: 120px;
+  background-color: var(--secondary-color);
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-image: url(../img/about/antenna.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.about-item:nth-child(2)::before {
+  background-image: url(../img/about/clock.svg);
+}
+.about-item:nth-child(3)::before{
+  background-image: url(../img/about/diagram.svg);
+}
+.about-item:nth-child(4):before{
+  background-image: url(../img/about/astronaut.svg);
 }
 .about-subtitle {
   margin-bottom: 10px;
