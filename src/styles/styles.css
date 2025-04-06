@@ -98,7 +98,12 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--primary-color);
-  background-image: url(../img/hero/people.webp);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/hero/people.webp);
   background-position: center;
   background-size: cover;
 }
@@ -295,9 +300,10 @@ img {
 .project {
   border: 1px solid #eee;
 }
-.project:hover{
+.project:hover {
   cursor: pointer;
-  box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
+    0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 
 .project-info {
@@ -323,5 +329,4 @@ img {
 }
 .projects-item {
   flex-basis: calc((100% - 60px) / 3);
-  
 }
