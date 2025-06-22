@@ -63,7 +63,106 @@
       <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero-button">Замовити послугу</button>
+          <button class="hero-button btn-open" data-modal-open>Замовити послугу</button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button class="modal-button btn-close" data-modal-close>
+                <svg class="modal-icon">
+                  <use href="./src/img/hw26/modal-icons.svg#icon-cross"></use>
+                </svg>
+              </button>
+
+              <div class="modal-content">
+                <h2 class="modal-title">
+                  Залиште свої дані, ми вам передзвонимо
+                </h2>
+                <form class="modal-form">
+                  <div class="form-field">
+                    <label for="user" class="label-user label">Ім'я</label>
+                    <div class="form-wrapper">
+                      <svg class="form-icon">
+                        <use
+                          href="./src/img/hw26/modal-icons.svg#icon-profile"
+                        ></use>
+                      </svg>
+                      <input
+                        type="text"
+                        id="user"
+                        name="username"
+                        minlength="2"
+                        maxlength="10"
+                        required
+                        class="form-input"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-field">
+                    <label for="phone" class="tel-label label">Телефон</label>
+                    <div class="form-wrapper">
+                      <svg class="form-icon">
+                        <use
+                          href="./src/img/hw26/modal-icons.svg#icon-phone"
+                        ></use>
+                      </svg>
+                      <input
+                        type="tel"
+                        id="phone"
+                        name="age"
+                        min="18"
+                        max="99"
+                        required
+                        class="form-input"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-field">
+                    <label for="email" class="email-label label" >Пошта</label>
+                    <div class="form-wrapper">
+                      <svg class="form-icon">
+                        <use
+                          href="./src/img/hw26/modal-icons.svg#icon-email"
+                        ></use>
+                      </svg>
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        min="18"
+                        max="99"
+                        required
+                        class="form-input"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <p class="form-comment">Коментар</p>
+                    <textarea
+                      name="text"
+                      id="comment"
+                      placeholder="Введіть текст"
+                      class="text-field"
+                    >
+                    </textarea>
+                  </div>
+                  <div class="form-part">
+                    <div>
+                      <label >
+                        <input type="checkbox" required class="input-confidence"/>
+                        Погоджуюся з розсилкою та приймаю
+                        <span class="input-span"> <a href="#" class="input-link">Умови договору</a></span>
+                      </label>
+                    </div>
+                     
+                  
+                    <button type="submit" class="form-button">Відправити</button>
+                  </div>
+                
+                </form>
+              </div>
+            </div>
+          </div>
+          <script src="./src/js/index.js" type="module"></script>
         </div>
       </section>
       <section class="about">
