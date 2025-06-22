@@ -76,6 +76,20 @@ img {
   line-height: 1.14;
   font-weight: 500;
   cursor: pointer;
+  position: relative;
+}
+.nav-link.active {
+  color: var(--accent-color);
+}
+.nav-link.active::after {
+  content: "";
+  display: flex;
+  border-radius: 2px;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  position: absolute;
+  top: 52px;
 }
 .nav-link:hover {
   color: var(--accent-color);
@@ -603,10 +617,10 @@ padding: 12px; */
 .teammate-link.footer:hover {
   background-color: var(--accent-color);
 }
-.footer-form{
+.footer-form {
   display: flex;
   gap: 12px;
- align-items: flex-end;
+  align-items: flex-end;
 }
 .footer-form-title {
   font-weight: 700;
@@ -615,16 +629,15 @@ padding: 12px; */
   text-transform: uppercase;
   color: var(--background-color);
 }
-.footer-form-input{
+.footer-form-input {
   background-color: var(--primary-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
-border-radius: 4px;
-width: 358px;
-height: 50px;
-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-padding-left: 16px;
-margin-top: 20px;
-
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  padding-left: 16px;
+  margin-top: 20px;
 }
 .foter-form-input ::placeholder {
   font-weight: 400;
@@ -632,7 +645,6 @@ margin-top: 20px;
   line-height: 125%;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-
 }
 .footer-form-button {
   background-color: var(--accent-color);
@@ -651,7 +663,7 @@ margin-top: 20px;
   align-items: center;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
-.footer-form-button:hover{
+.footer-form-button:hover {
   cursor: pointer;
   background-color: #188ce8;
 }
@@ -730,4 +742,34 @@ img {
 }
 .projects-item {
   flex-basis: calc((100% - 60px) / 3);
+}
+.project {
+  position: relative;
+  overflow: hidden;
+}
+.project-photo {
+  position: relative;
+  overflow: hidden;
+}
+.overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  inset: 0;
+  background-color: rgba(33, 150, 243, 0.9);
+  padding: 20px;
+  transform: translateY(100%);
+  transition: transform 1s ease;
+}
+.overlay-content {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  color: var(--background-color);
+}
+.project:hover .overlay {
+  transform: translateY(0);
 }
