@@ -175,8 +175,6 @@ img {
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
- 
-  
 }
 .modal {
   display: flex;
@@ -190,9 +188,8 @@ img {
 
   top: 50%;
   left: 50%;
- 
+
   transform: translate(-50%, -50%);
- 
 }
 
 .btn-close {
@@ -201,17 +198,15 @@ img {
   right: 15px;
   cursor: pointer;
 }
-.no-scroll{
-    overflow: hidden;
+.no-scroll {
+  overflow: hidden;
 }
-.btn-close:hover .modal-icon{
-fill: var(--accent-color);
+.btn-close:hover .modal-icon {
+  fill: var(--accent-color);
 }
-.modal-content{
-
+.modal-content {
 }
 .modal-title {
-
   font-weight: 700;
   font-size: 20px;
   letter-spacing: 0.03em;
@@ -607,6 +602,63 @@ padding: 12px; */
 }
 .teammate-link.footer:hover {
   background-color: var(--accent-color);
+}
+.footer-form{
+  display: flex;
+  gap: 12px;
+ align-items: flex-end;
+}
+.footer-form-title {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--background-color);
+}
+.footer-form-input{
+  background-color: var(--primary-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+border-radius: 4px;
+width: 358px;
+height: 50px;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+padding-left: 16px;
+margin-top: 20px;
+
+}
+.foter-form-input ::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+
+}
+.footer-form-button {
+  background-color: var(--accent-color);
+  color: var(--background-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 187%;
+  letter-spacing: 0.06em;
+  text-align: center;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+.footer-form-button:hover{
+  cursor: pointer;
+  background-color: #188ce8;
+}
+.footer-form-icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--background-color);
 }
 .portfolio-header {
   padding-top: 25px;

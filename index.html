@@ -63,7 +63,9 @@
       <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero-button btn-open" data-modal-open>Замовити послугу</button>
+          <button class="hero-button btn-open" data-modal-open>
+            Замовити послугу
+          </button>
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
               <button class="modal-button btn-close" data-modal-close>
@@ -117,7 +119,7 @@
                     </div>
                   </div>
                   <div class="form-field">
-                    <label for="email" class="email-label label" >Пошта</label>
+                    <label for="email" class="email-label label">Пошта</label>
                     <div class="form-wrapper">
                       <svg class="form-icon">
                         <use
@@ -147,22 +149,29 @@
                   </div>
                   <div class="form-part">
                     <div>
-                      <label >
-                        <input type="checkbox" required class="input-confidence"/>
+                      <label>
+                        <input
+                          type="checkbox"
+                          required
+                          class="input-confidence"
+                        />
                         Погоджуюся з розсилкою та приймаю
-                        <span class="input-span"> <a href="#" class="input-link">Умови договору</a></span>
+                        <span class="input-span">
+                          <a href="#" class="input-link"
+                            >Умови договору</a
+                          ></span
+                        >
                       </label>
                     </div>
-                     
-                  
-                    <button type="submit" class="form-button">Відправити</button>
+
+                    <button type="submit" class="form-button">
+                      Відправити
+                    </button>
                   </div>
-                
                 </form>
               </div>
             </div>
           </div>
-          <script src="./src/js/index.js" type="module"></script>
         </div>
       </section>
       <section class="about">
@@ -632,7 +641,32 @@
             </li>
           </ul>
         </div>
+        <div>
+          <h3 class="footer-form-title">Підпишіться на розсилку</h3>
+          <form class="footer-form">
+            <div class="foter-form-field">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                min="18"
+                max="99"
+                placeholder="E-mail"
+                required
+                class="footer-form-input"
+                
+              />
+              
+            </div>
+            <button type="submit" class="footer-form-button">Підписатися
+              <svg class="footer-form-icon"> 
+                <use href="./src/img/hw26/modal-icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+    <script src="./src/js/index.js" type="module"></script>
   </body>
 </html>
