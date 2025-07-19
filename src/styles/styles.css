@@ -429,26 +429,56 @@ textarea {
   display: flex;
   gap: 30px;
 }
+.image-hover {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.image-hover:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
 .work-item {
   position: relative;
 }
+
+.work-link {
+  display: block;
+  overflow: hidden;
+}
+
+.work-thumb {
+  position: relative;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  will-change: transform;
+}
+
+.work-link:hover .work-thumb {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.work-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .work-name {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 370px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   height: 70px;
   font-weight: 700;
   font-size: 14px;
   background: rgba(47, 48, 58, 0.8);
-
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
   color: var(--background-color);
-  position: absolute;
-  top: 224px;
-  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  pointer-events: none;
 }
 .team {
   background-color: var(--second-bg-color);
@@ -477,6 +507,36 @@ textarea {
   flex-direction: column;
   align-items: center;
 }
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.floating {
+  animation: float 3s ease-in-out infinite;
+}
+@keyframes floatSecond {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.floating-second{
+  animation: floatSecond 3s ease-in-out infinite;
+}
+
 .teammate-name {
   margin-top: 30px;
   font-weight: 500;
