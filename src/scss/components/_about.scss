@@ -1,0 +1,42 @@
+.about {
+    padding-top: 95px;
+    padding-bottom: 95px;
+  }
+  .about-list {
+    justify-content: baseline;
+    display: flex;
+    gap: 30px;
+  }
+  .about-item::before {
+    content: "";
+    display: block;
+    height: 120px;
+    background-color: var(--secondary-color);
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-image: url(../img/about/antenna.svg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .about-item:nth-child(2)::before {
+    background-image: url(../img/about/clock.svg);
+  }
+  .about-item:nth-child(3)::before {
+    background-image: url(../img/about/diagram.svg);
+  }
+  .about-item:nth-child(4):before {
+    background-image: url(../img/about/astronaut.svg);
+  }
+  .about-subtitle {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    line-height: 1.14;
+  }
+  .about-text {
+    color: var(--secondary-text-color);
+    letter-spacing: 0.03em;
+  }

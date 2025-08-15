@@ -1,0 +1,37 @@
+.clients-container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .clients-title {
+    font-weight: 700;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  .clients-icons {
+    width: 170px;
+    height: 92px;
+    padding-inline: 32px;
+    padding-block: 16px;
+    fill: #afb1b8;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+    &:hover {
+      fill: #2196f3;
+      cursor: pointer;
+      border-color: #2196f3;
+    }
+  }
+  .clients-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 30px;
+  }
