@@ -1,52 +1,48 @@
 .work {
-    padding-bottom: 95px;
-  }
-  .work-title {
+  padding-bottom: 95px;
+
+  &__title {
     margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     letter-spacing: 0.03em;
     text-align: center;
   }
-  .work-list {
+
+  &__list {
     display: flex;
     gap: 30px;
   }
-  .image-hover {
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-  }
-  
-  .image-hover:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-  }
-  .work-item {
+
+  &__item {
     position: relative;
   }
-  
-  .work-link {
+
+  &__link {
     display: block;
     overflow: hidden;
+
+    &:hover {
+      .work__thumb {
+        transform: scale(1.05);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      }
+    }
   }
-  
-  .work-thumb {
+
+  &__thumb {
     position: relative;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
     will-change: transform;
   }
-  
-  .work-link:hover .work-thumb {
-    transform: scale(1.05);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-  }
-  
-  .work-img {
+
+  &__img {
     display: block;
     width: 100%;
     height: auto;
   }
-  
-  .work-name {
+
+  &__name {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -63,3 +59,13 @@
     letter-spacing: 0.03em;
     pointer-events: none;
   }
+}
+
+.image__hover {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  }
+}
